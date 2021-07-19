@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "chat-2335a": {
+      "hosting": {
+        "project01": [
+          "chat-2335a"
+        ]
+      }
+    }
+  }
+}
