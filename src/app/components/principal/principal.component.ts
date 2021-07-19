@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MejorasService } from "../../services/mejoras.service";
-
 @Component({
   selector: 'app-principal',
   templateUrl: './principal.component.html',
@@ -8,13 +6,16 @@ import { MejorasService } from "../../services/mejoras.service";
 })
 export class PrincipalComponent implements OnInit {
   mejoras: any;
-  constructor(private mejorasService : MejorasService) { }
+  categoria: string;
+  esteticas: any;
+  mecanicas: any[];
+  total: number = 0;
+  aux : any;
+  constructor() { }
 
   ngOnInit(): void {
-    this.mejorasService.getMejoras().then((data) => {
-      this.mejoras = [];
-      this.mejoras = data;
-    })
+    
   }
+
 
 }

@@ -10,11 +10,15 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { LoginComponent } from './components/login/login.component';
 import { PrincipalComponent } from './components/principal/principal.component';
+import { MecanicaComponent } from './components/mecanica/mecanica.component';
+import { EsteticaComponent } from './components/estetica/estetica.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    MecanicaComponent,
+    EsteticaComponent
   ],
   imports: [
     BrowserModule,

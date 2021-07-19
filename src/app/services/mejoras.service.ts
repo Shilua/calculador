@@ -23,4 +23,15 @@ export class MejorasService {
        )
      })
    }
+
+   getEsteticas(){
+    return new Promise((resolve,reject)=>{
+      this.afs.collection("esteticas")
+      .valueChanges()
+      .subscribe(
+        (data) => resolve(data),
+        (error) => reject(error)
+      )
+    })
+   }
 }
